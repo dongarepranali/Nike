@@ -1,56 +1,67 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Lora', serif;
+}
 .navigation-nav{
     background-color:#e3cdcd;
     font-size:16px;
     padding:5px;
     margin-bottom:none !important;
-  }
-  .nike{
-    background-color: #abb3b78f; 
-    background-image: linear-gradient(to left right, rgba(198, 8, 232, 0.129),#abb3b78f);
-    width:100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align:center;
-  }
-  .nike .text {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    align-items: center;
-    overflow: hidden;
-  }
-  .nike .text h1{
-    text-transform: uppercase;
-     background-image: linear-gradient(
-       -225deg,
-         rgb(179, 34, 84) 0%,
-           pink 29%,
-          indigo 67%,
-       deeppink 100%
-     );
-      background-size: auto auto;
-      background-clip: border-box;
-      background-size: 200% auto;
-      color: #fff;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textclip 2s linear infinite;
-      display: inline-block;
-      font-size: 100px;
-   }
-  @keyframes textclip {
+}
+.navigation-nav .logo span{
+    color:indigo !important;
+}
+.nike{
+  background-color: #abb3b78f; 
+  background-image: linear-gradient(to left right, rgba(198, 8, 232, 0.129),#abb3b78f);
+  width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align:center;
+}
+.nike .text {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  align-items: center;
+  overflow: hidden;
+}
+.nike .text h1{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+   -225deg,
+   rgb(179, 34, 84) 0%,
+   pink 29%,
+   indigo 67%,
+   deeppink 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 90px;
+}
+@keyframes textclip {
     to {
       background-position: 200% center;
     }
-  }
-  .nike .text p{
+}
+.nike .text p{
     font-size:17px;
     font-weight:500;
     color:#333;
     margin-top:30px;
-  }
-  .shop-btn{
+}
+.shop-btn{
     width:140px;
     padding:10px;
     font-size:16px;
@@ -94,6 +105,7 @@
     text-align:center;
     padding-top:10px;
     font-size:50px;
+    font-weight:600;
     color:rgba(45, 8, 80, 0.75);
   }
   .shopping-cards marquee{
@@ -121,6 +133,7 @@
   .shopping-cards .cards .size{
     display:flex;
     justify-content:flex-start;
+    padding-left:30px;
   }
   .shopping-cards .cards .size h5{
     font-size:20px;
@@ -158,3 +171,190 @@
     margin-bottom:30px;
     z-index: 1; 
   }
+  /* third section */
+  .users{
+    width:100%;
+    background-color:rgb(246, 242, 237);
+    text-align:center;
+  }
+  .users .users-comment h1{
+    text-align:center;
+    font-size:40px;
+    font-weight:600;
+    color:cadetblue;
+    margin-bottom:30px;
+  }
+  .users .users-comment span{
+    color:burlywood;
+    text-align: center;
+  }
+  .users .users-comment h4{
+    font-weight:900;
+  }
+  .users .users-comment h5{
+    font-size:16px;
+    font-weight:600;
+  }
+  .users .users-comment h6{
+    font-weight:600;
+    font-size:14px;
+  }
+  .review-btn{
+    width: 20%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background:rgb(7, 7, 53) ;
+    cursor: pointer;
+    position: relative;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size:16px;
+    font-weight:600;
+    z-index: 0;
+    border-radius: 10px;
+   }
+   .review-btn:before{
+    content:'';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    background-size:400%;
+    top: -2px;
+    left:-2px;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height:calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px; 
+  }
+ .review-btn:active{
+    color:rgb(7, 7, 53);
+  }
+ .review-btn:active:after{
+    background:transparent;
+   }
+  .review-btn:hover:before{
+    opacity: 1;
+   }
+   .review-btn:after{
+    z-index: -1;
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    }
+    @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+  /* forth section */
+  .new-img{
+    background-image: url(../images/nike2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:600px;
+    align-items: center;
+  }
+  .new-img .content{
+    width:40%;
+    height: 300px;
+    float:right;
+    color:rgb(255, 52, 120);
+  }
+  .new-img .content h1{
+    font-size:40px;
+    font-weight:600;
+    margin-top:30%;
+  }
+  .new-img .content h3{
+    font-size:25px;
+    font-weight:600;    
+  }
+  /* shoes slider section */
+
+/* footer section */
+.footer-section{
+  width:100%;
+  height:auto;
+  background-color:#010417;
+  color:#f1f1f1;
+}
+.footer-section .content span{
+  padding:5px;
+  font-size:23px;
+  font-weight:900;
+  margin-top:30px;
+  color:rgb(89, 54, 54);
+  margin-right:10px;
+}
+.footer-section .content span:hover{
+  color:rgb(33, 217, 211);
+  border:1px solid#fff;
+  border-radius:100%;
+  background-color:#f1f1f1;
+}
+.footer-section .content h4{
+  font-size:20px;
+
+}
+@media only screen and (max-width:600px) {
+  .nike .text h1{
+    font-size:50px;
+  }
+  .shop-btn{
+    margin:0 auto;
+    margin-bottom:30px;
+  }
+  .shopping-cards h1{
+    font-size:40px;
+  }
+  .shopping-cards .cards button{
+    margin:15px 45px;
+  }
+  .review-btn{
+    width:50%;
+    font-size:14px;
+    font-weight:500;
+  }
+  .new-img{
+    height:auto;
+    width:100%;
+    text-align: center;
+  }
+  .new-img .content{
+    width:100% !important;
+  }
+  .new-img .content h1{
+    margin-top:30px !important;
+  }
+  .new-img .content h3{
+    margin-bottom:20px;
+  }
+  .footer-section{
+    text-align:center;
+  }
+}
+@media only screen and (max-width:900px) {
+  .nike .text h1{
+    font-size: 60px;
+  }
+  .nike img{
+    height:40%;
+    margin-top:10px;
+  }
+  .shopping-cards h1{
+    font-size:45px;
+  }
+  .new-img .content{
+    width:50%;
+  }
+}
