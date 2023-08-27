@@ -72,12 +72,14 @@ body{
   color:#fff;
   padding:10px 10px;
   font-weight:600;
+  margin-bottom:20px;
 }
 .main-image .text .buy{
   padding:10px 10px;
   background-color:green;
   color:#fff;
   font-weight:600;
+  margin-bottom:20px;
 }
 /* footer section */
 .footer-section{
@@ -85,7 +87,7 @@ body{
     height:auto;
     background-color:#010417;
     color:#f1f1f1;
-  }
+ }
   .footer-section .content span{
     padding:5px;
     font-size:23px;
@@ -131,5 +133,8 @@ body{
     width:20%;
     margin-right:10px;
     border:2px solid #e3cdcd;
+    }
+    .main-image .text{
+      text-align: center;
     }
 }
