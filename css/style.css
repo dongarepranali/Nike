@@ -12,9 +12,8 @@ body{
     padding:5px;
     margin-bottom:none !important;
 }
-.navigation-nav .logo span{
-    color:indigo !important;
-}
+
+/* banner part */
 .nike{
   background-color: #abb3b78f; 
   background-image: linear-gradient(to left right, rgba(198, 8, 232, 0.129),#abb3b78f);
@@ -217,7 +216,7 @@ body{
    }
    .review-btn:before{
     content:'';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, deeppink);
     position: absolute;
     background-size:400%;
     top: -2px;
@@ -289,22 +288,41 @@ body{
   color:#f1f1f1;
 }
 .footer-section .content span{
-  padding:5px;
-  font-size:23px;
-  font-weight:900;
+  padding:7px;
+  font-size:20px;
+  font-weight:700;
   margin-top:30px;
   color:rgb(89, 54, 54);
   margin-right:10px;
 }
+.footer-section .content span:nth-child(1):hover{
+  background-color:green;
+  color:#f1f1f1;
+}
+.footer-section .content span:nth-child(2):hover{
+  background-image: linear-gradient(
+    to left bottom,blue,deeppink,red,Orange
+  );
+  color:#f1f1f1;
+}
+.footer-section .content span:nth-child(3):hover{
+  background-color:red;
+  color:#f1f1f1;
+}
+.footer-section .content span:nth-child(4):hover{
+  background-color:red;
+  color:#f1f1f1;
+}
+.footer-section .content span:nth-child(5):hover{
+  background-color:rgb(248, 248, 115);
+  color:#000;
+}
 .footer-section .content span:hover{
-  color:rgb(33, 217, 211);
-  border:1px solid#fff;
-  border-radius:100%;
-  background-color:#f1f1f1;
+  border:0px solid#fff;
+  border-radius:50%;
 }
 .footer-section .content h4{
   font-size:20px;
-
 }
 @media only screen and (max-width:600px) {
   .nike .text h1{

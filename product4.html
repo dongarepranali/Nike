@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- logo link -->
+    <link rel="icon" type="image/jpg" href="images/logo.jpg" width="90px">
+    <!-- font cheatsheet link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Edu+SA+Beginner:wght@600&family=Great+Vibes&family=Lato&family=Lobster&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,600;1,600&family=Nanum+Gothic:wght@400;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,400;1,6..12,600&family=Poppins:ital,wght@1,300;1,500&family=Raleway:wght@500&family=Righteous&family=Roboto+Condensed&family=Roboto+Slab&family=Roboto:wght@400;500&family=Rowdies:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/product.css">
+    <title>shoes nike</title>
+</head>
+<body>
+<!-- navigation section -->
+    <div class="navigation-nav">
+        <nav class="navbar navbar-default ">
+             <div class="container-fluid">
+                 <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <div class="container" onclick="myFunction(this)">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </div>                       
+                 </button>
+                 <a class="navbar-brand logo" href="#"><span>Nike Shoes</span></a>
+                 </div>
+                 <div class="collapse navbar-collapse" id="myNavbar">
+                 <ul class="nav navbar-nav">
+                     <li class="active"><a href="index.html">Home</a></li>
+                     <li class="dropdown"><a  href="men.html">MEN</a></li>
+                     <li><a href="#">WOMEN</a></li>
+                     <li><a href="#">KIDS</a></li>
+                     <li><a href="#">SPORTS</a></li>
+                 </ul>
+                 <ul class="nav navbar-nav navbar-right">
+                 <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search"/>
+                      <div class="input-group-btn">
+                        <button class="btn btn-success" type="submit">
+                          <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                 </ul>
+                 </div>
+            </div>
+        </nav>
+    </div>
+<!-- product dection -->
+<div class="main-image">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="main">
+                <img src="images/2.png" id="imagebox">
+            </div>
+            <div class="small-img">
+                <img src="images/1.png" onclick="clickimg(this)" alt="">
+                <img src="images/2.png" onclick="clickimg(this)" alt="">
+                <img src="images/3.png" onclick="clickimg(this)" alt="">
+                <img src="images/4.png" onclick="clickimg(this)" alt="">
+                <img src="images/5.png" onclick="clickimg(this)" alt="">
+                <img src="images/6.png" onclick="clickimg(this)" alt="">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 text">
+            <h5>Sustainable Materials</h5>
+            <h3>Nike Revolution 6</h3>
+            <h4>Women's Road Running Shoes</h4>
+            <span>MRP :₹ 11 895.00</span>
+            <p class="option">Size: <select name="size">
+                <option value="Select size">Select size</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option></select>
+            </p>
+            <div class="icon">
+                <i class="fa fa-star"></i>	
+                <i class="fa fa-star"></i>	
+                <i class="fa fa-star"></i>	
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <a class="btn btn-default card"><span class="fa fa-shopping-cart"></span> Add to Cart</a>
+            <a class="btn btn-default buy" href="index.html"><span class="fa fa-shopping-cart"></span> Buy</a>
+        </div>
+    </div>
+</div>
+<!-- footer section -->
+    <div class="container footer-section">
+        <div class="row">
+        <div class="col-lg-3">
+            <h3>Nike Shoes</h3>
+            <h5>FIND A STORE
+            BECOME A MEMBER
+            Send Us Feedback
+            STUDENT DISCOUNTS</h5>
+        </div>
+        <div class="col-lg-3">
+            <h3>Get Helps</h3>
+            <h5>Order Status</h5>
+            <h5>Payment Options</h5>
+            <h5>Contact Us On Nike.com Inquiries</h5>
+            <h5>Contact Us On All Other Inquiries</h5>          
+        </div>
+        <div class="col-lg-3">
+            <h3>About Nike</h3>
+            <h5>News</h5>
+            <h5>Careers</h5>
+            <h5>Investors</h5>
+            <h5>Sustainability</h5>
+        </div>
+        <div class="col-lg-3 content">
+            <span class="fa fa-whatsapp"></span>
+            <span class="fa fa-instagram"></span>
+            <span class="fa fa-youtube-play"></span>
+            <span class="fa fa-pinterest"></span>
+            <span class="fa fa-snapchat"></span>
+            <h4>India © 2023 Nike, Inc. All Rights Reserved</h4>
+        </div>
+        </div>
+    </div>
+<script src="js/nike.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

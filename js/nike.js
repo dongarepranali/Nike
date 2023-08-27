@@ -1,22 +1,7 @@
 function myFunction(x) {
     x.classList.toggle("change");
   }
-$('.shoes-slider').shoesSlider({
-    loop:true,
-    margin:30,
-    nav:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
-        },
-        1200:{
-            items:5
-        }
-    }
-})
+function clickimg(smallImg){
+  var fullImg = document.getElementById("imagebox");
+  fullImg.src = smallImg.src
+}
