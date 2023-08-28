@@ -12,7 +12,6 @@ body{
     padding:5px;
     margin-bottom:none !important;
 }
-
 /* banner part */
 .nike{
   background-color: #abb3b78f; 
@@ -128,26 +127,6 @@ body{
     color:gray;
     font-size:17px;
     text-align:center;
-  }
-  .shopping-cards .cards .size{
-    display:flex;
-    justify-content:flex-start;
-    padding-left:30px;
-  }
-  .shopping-cards .cards .size h5{
-    font-size:20px;
-    color:#333;  
-  }
-  .shopping-cards .cards .size span{
-    width:25px;
-    height:25px;
-    background-color:#333;
-    color:#fff;
-    font-size:15px;
-    text-align:center;
-    cursor:pointer;
-    margin-right:10px;
-    margin-left:10px;
   }
   .shopping-cards .cards h6{
     text-align:center;
